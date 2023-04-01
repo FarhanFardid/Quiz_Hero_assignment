@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Quiz Hero Blogs</title>
+</head>
+<body>
+     <h2 class="text-center  p-3 display-4">Blogs</h2>
+<!-- blogs in the accordion format -->
+<div class="accordion" id="accordionExample">
+
+    <div class="accordion-item p-3">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Blog #1 Differences Between Array map & forEach and find & filter methods
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <br class="accordion-body ">
+          <strong>The map() method</strong> , executes the provided function once for each element in an array. It creates a new array with the results of calling a function for every array element. Hence map() method relies on immutability. The forEach() method executes the provide function for each of the element in the array but unlike the map() method it doesn't return anything.<br>
+
+          The filter() method returns an array containing the element that satisfies the certain provided condition, but on the other hand the find() method returns the first element  that satisfies the condition. In filter() method , whole array is iterated despite the fact that the element being searched for is present at the beginning. the find() method only iterates till the first element that matches the condition.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item p-3">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Blog #2 Differences Between LocalStorage , SessionStorage and cookies
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Local storage</strong>  is useful for storing data that the user will need to access later, such as offline data. Session storage is a great way to improve the performance of your web applications. Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.
+          The LocalStorage's data never expires automatically. it will remain on the storage as long as it is not deleted manually. The SessionStorage data expires as soon as the browser is shut down or the session is finished. The cookies also contains an automatically generated expired date and after the it will removed.  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item p-3">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Blog #3 What is Event Loop and how it works?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>The Event Loop</strong>  has one simple job that is  to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. 
+       
+          The event loop works by making a request to some internal or external "event provider" that generally blocks the request until an event has arrived, then calls the relevant event handler to dispatches the event.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item p-3">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Blog #4 QuizTimer function in noChange.js file explained
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>The quizTimer function</strong> is a timer function and it takes a single parameter, which is mainly boolean value. If value is is true, the function clears the interval and stops the timer . If it is false the function starts  The Timer function that updates the content of an HTML element every second.The quizTimer function does not return anything.
+
+        
+        
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item p-3">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Blog #5 ChooseQuiz function in noChange.js file explained
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>The chooseQuiz function</strong> takes two parameters - index and givenAns. The index parameter refers to the index of the current quiz question in the quizData array, and givenAns refers to the answer given by the user for that quiz question. After updating the answers array, the function calls the displayAnswers function, passing in the updated answers array as an argument.
+
+          
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
