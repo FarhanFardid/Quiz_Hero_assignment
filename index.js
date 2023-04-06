@@ -17,7 +17,7 @@ document.getElementById('blog').addEventListener('click', function(){
     window.location.href= "blog.html";
 
 })
-// EventListener for quiz start button
+// EventListener for quiz  start button
 startQuiz.addEventListener("click", () => {
   let countDown = document.querySelector("#countDownContainer");
   let counter = document.querySelector("#counter");
